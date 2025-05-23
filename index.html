@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Baby Sedanur 🤍</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffebee;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            overflow-x: hidden;
+            background-image: url('https://img.freepik.com/free-vector/pink-heart-pattern-background_53876-93189.jpg');
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
+            position: relative;
+            z-index: 10;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border: 5px solid #ff9eb7;
+            animation: pulse 2s infinite alternate;
+        }
+
+        h1 {
+            color: #ff4081;
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 0px rgba(255, 192, 203, 0.8);
+        }
+
+        .letter {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #555;
+            border-left: 10px solid #ff4081;
+        }
+
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 30px;
+            font-size: 1.3em;
+            color: #ff4081;
+        }
+
+        .heart {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: pink;
+            transform: rotate(45deg);
+            animation: float 5s infinite ease-in-out;
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        .heart:before, .heart:after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-color: pink;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart:before {
+            top: -15px;
+            left: 0;
+        }
+
+        .heart:after {
+            top: 0;
+            left: -15px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: rotate(45deg) translateY(0) translateX(0);
+            }
+            50% {
+                transform: rotate(45deg) translateY(-50px) translateX(10px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 50px rgba(255, 105, 180, 0.8);
+            }
+        }
+
+        .hearts-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .photo-frame {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            border: 10px solid #ff9eb7;
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transform: rotate(-5deg);
+            transition: all 0.3s ease;
+        }
+
+        .photo-frame:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        .photo-frame img {
+            max-width: 100%;
+            max-height: 100%;
+            padding: 10px;
+        }
+
+        .date {
+            text-align: center;
+            color: #ff4081;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 15px;
+            background: linear-gradient(45deg, #ff4081, #ff9eb7);
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(255, 64, 129, 0.6);
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #ffebee;
+            border-radius: 10px;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .music-control {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts-container" id="hearts-container"></div>
+
+    <div class="container">
+        <h1>For My Baby Sedanur 🤍</h1>
+        
+        <div class="date">
+            Made with love on May 23, 2025 at 7:56 PM
+        </div>
+        
+        <div class="photo-frame">
+            ❤️❤️❤️
+        </div>
+        
+        <div class="letter">
+            <p>Hiiii babbyyyyy, so i made this exactly at May 23, 2025 at 7:56 pm. I wanna express my love for you in this way and honestly idk how to do this thingy like all the coding and stuff but i asked help from chat gpt(i tried my best okay😔) hehehe i hope you'll appreciate this thing i made for you.</p>
+            
+            <p>Okay so a little narrative about how we met. One time, i got into a heartbreak and few days after that a friend(holly) gave me a discord link. At first it didn't matter to me because i never thought it would help me but i tried it anyways, i was being myself and speak whatever came in my mind. All racism and stuff was spoken and one time i got into an argument with rinad with some religion shi and then she muted and banned me from the server. I truly didn't care but i found my happiness in that server so i reached up to you, the girl i never thought i would spend the most of my time to, the girl i would cry over, and lastly the girl that i would love the most.</p>
+            
+            <p>I asked you to do something about it and i expected you to say something harsh, however you dealt with it even taking sides on me. I was truly shocked I never thought u would so yeah i came back and did stuffs. You kept defending me until i got happy, from you my love. One time we kept yapping all over again, day by day. It helped me so much, i was happy about it and slowly getting over. We kept yapping until i developed feelings and you too! HAHAHAHAGA. You confessed first and I tried to avoid it cuz i was scared and stuff and bro i just got into a heartbreak and i wasnt fully getting over it.</p>
+            
+            <p>We kept yapping and stuff until one day u decided to go back w xino and bad thing i was extremely sick at that time. The moment i knew u and xino came back, i became cold and very jealous. Extremely jealous and i couldnt hold it, i let it slide but i still had feelings for you, days passed by and an argument happened that made u and xino break up. HAHAHA i hit my shot and finally got back with you. I was ready and tried not to hide my feelings anymore, we've been together for months now. We are so obsessed with eachother and very in love.</p>
+            
+            <p>Not until this year tho because i had some complication with school, i became very busy to the point that i couldnt reach out to you anymore, I was so drained that i couldnt even speak to you anymore and it went for months. Which I am very guilty about, I hurt you so bad and I made you cry, I am genuinely sorry for it, i cant get over it until now so i am doing my best to be myself again and prioritizing you over this school stuff(i let my mom handle this to have more time for you).</p>
+            
+            <p>You decided to get over me after those months with me still loving you, I was very confident that you wont leave me because i have entrusted you so much to the point that i abused your kindness, it was all my fault and im tryna make things right again. You decided to break up at May 3, 2025 and at May 4, 2025 i tried to get you back again and i kinda did(ig) i got my trust on you again and all the feelings came back. But now, it's even worse because Im lovesick lol and Im so downbad i need lots of maintenance otherwise i would be sad hahahahaahahahahahahaagahagahahaha and yeah this is our narrative.</p>
+            
+            <div class="signature">
+                <p>Love letter:</p>
+                <p>Hi baby, i wanna say and express myself to you that whatever happens i still would love you and nobody could ever take over ur throne. Sedanur supremacy! Anyways yeah I wanna say that I love youuuuu soososos much🤍🤍🤍🤍 and i miss youuuu sosossoso bad rn because ur at school😔😔😔.</p>
+                
+                <p>Baby from now on i learned my mistakes and i wont do it again i promise, ill try my extreme best to prioritize the reassurance for you even in my times of school. Ill be there when you need me(im 19291kilometers away HAHAHAHA but ima try to talk to you about what'll happen) and please keep in mind that i care about you okay? It made me lose my mind when i heard what i did to you and even if the slightest inch i would get sad because i dont want my baby to feel even the slightest pain not to mention ur a very silly mf that would hurt urself all the time grrr but pleaseedndjse take care of yourself cuz im not there to watch over u, what if u got into an accident huh???? Baby i woudl literally cry and rip my heart off bro that would destroy me.</p>
+                
+                <p>Anyways yeah I love you so much baby and i care about you, i hope youre doing well there and i would always love you no matter what happens i love you i love you i love youuu i lobe you sosososo much i loveee you baby i love you i lovr you i loveee yoyyuuuu i love you i love you iloveyouu aaaa im so obsessed with you myyy babyyy my askim my bai my skibidi my nunu my labilabidabs my bisaya queen the love of my lifeee graaahh mwwwwwwwwaaaaaahhhhhhhhhhh I LOOVEEE YOUUU!!!!🤍🤍🤍🤍🤍🤍🤍</p>
+            </div>
+        </div>
+        
+        <button class="btn" id="surprise-btn">Click for Surprise!</button>
+        
+        <div class="hidden-message" id="hidden-message">
+            <h2 style="color: #ff4081;">You're the most special person in my life! 🤍</h2>
+            <p>No matter what happens, you'll always be my baby Sedanur!</p>
+            <div style="font-size: 3em;">❤️🥰😘💋👩‍❤️‍💋‍👨</div>
+        </div>
+    </div>
+
+    <div class="music-control">
+        <audio id="bg-music" loop>
+            <!-- Replace this with your legally obtained audio file -->
+            <source src="YOUR_ULTRAVIOLENCE_AUDIO_FILE.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button class="btn" id="music-btn">Play Ultraviolence</button>
+    </div>
+
+    <script>
+        // Create floating hearts
+        function createHearts() {
+            const container = document.getElementById('hearts-container');
+            const colors = ['#ff4081', '#ff9eb7', '#ffb6c1', '#ff69b4', '#ff1493'];
+            
+            for (let i = 0; i < 50; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                
+                // Random properties
+                const size = Math.random() * 20 + 10;
+                const posX = Math.random() * window.innerWidth;
+                const posY = Math.random() * window.innerHeight;
+                const delay = Math.random() * 5;
+                const duration = Math.random() * 3 + 3;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                
+                heart.style.width = `${size}px`;
+                heart.style.height = `${size}px`;
+                heart.style.left = `${posX}px`;
+                heart.style.top = `${posY}px`;
+                heart.style.animationDelay = `${delay}s`;
+                heart.style.animationDuration = `${duration}s`;
+                heart.style.backgroundColor = color;
+                
+                heart.style.setProperty('--heart-color', color);
+                
+                container.appendChild(heart);
+            }
+        }
+        
+        // Surprise button
+        document.getElementById('surprise-btn').addEventListener('click', function() {
+            const message = document.getElementById('hidden-message');
+            if (message.style.display === 'block') {
+                message.style.display = 'none';
+            } else {
+                message.style.display = 'block';
+                // Add more hearts when button is clicked
+                createHearts();
+            }
+        });
+        
+        // Music button
+        const musicBtn = document.getElementById('music-btn');
+        const bgMusic = document.getElementById('bg-music');
+        
+        musicBtn.addEventListener('click', function() {
+            if (bgMusic.paused) {
+                bgMusic.play();
+                musicBtn.textContent = 'Pause Music';
+            } else {
+                bgMusic.pause();
+                musicBtn.textContent = 'Play Ultraviolence';
+            }
+        });
+        
+        // Initialize
+        window.onload = function() {
+            createHearts();
+            
+            // Make hearts move with mouse
+            document.addEventListener('mousemove', function(e) {
+                const hearts = document.querySelectorAll('.heart');
+                hearts.forEach(heart => {
+                    const x = e.clientX;
+                    const y = e.clientY;
+                    
+                    // Only affect hearts near cursor
+                    const rect = heart.getBoundingClientRect();
+                    const heartX = rect.left + rect.width / 2;
+                    const heartY = rect.top + rect.height / 2;
+                    
+                    const distance = Math.sqrt(Math.pow(x - heartX, 2) + Math.pow(y - heartY, 2));
+                    
+                    if (distance < 150) {
+                        const angle = Math.atan2(y - heartY, x - heartX);
+                        const newX = heartX - Math.cos(angle) * 5;
+                        const newY = heartY - Math.sin(angle) * 5;
+                        
+                        heart.style.left = `${newX}px`;
+                        heart.style.top = `${newY}px`;
+                    }
+                });
+            });
+        };
+    </script>
+</body>
+</html>
